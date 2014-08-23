@@ -2,7 +2,7 @@
 "
 " File: hexccc.vim
 " file created in 2014/08/18 10:31:49.
-" LastUpdated:2014/08/18 11:46:06.
+" LastUpdated:2014/08/23 09:18:12.
 " Author: iNo <wdf7322@yahoo.co.jp>
 " Version: 1.0
 " License: MIT License {{{
@@ -47,7 +47,6 @@ function! s:convertSingleLine(l1, isToUpper)
 endfunction
 
 function! s:convertMultiLines(l1, l2, isToUpper)
-  let lines = getline(a:l1, a:l2)
   let i = a:l1
   while i <= a:l2
     call s:setNewLine(i, getline(i), a:isToUpper)
